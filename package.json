@@ -21,7 +21,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "pnpm lint --fix"
+      "pnpm lint --fix",
+      "pnpm test -- --findRelatedTests --bail --passWithNoTests"
     ]
   },
   "dependencies": {
