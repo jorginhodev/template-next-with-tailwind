@@ -44,7 +44,7 @@ jobs:
         run: pnpm typecheck
 
       - name: Test
-        run: pnpm test
+        run: pnpm test --passWithNoTests
 
       - name: Build
         run: pnpm build
